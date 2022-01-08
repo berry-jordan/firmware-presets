@@ -121,6 +121,7 @@
       "BMSThomas",
       "ctzsnooze",
       "Directory",
+      "DusKing1 (Hugo Chiang), Pitronic",
       "Evan Turner (Headsup)",
       "IllusionFpv",
       "Ivan Efimov (Limon)",
@@ -158,6 +159,7 @@
       "basic",
       "betaflight",
       "blackbox",
+      "BMI270",
       "BMSThomas",
       "camera",
       "camera_control",
@@ -193,6 +195,9 @@
       "freesytle",
       "frsky",
       "GPS",
+      "gyro",
+      "gyros",
+      "gyroscope",
       "HD",
       "HD_freestyle",
       "HDzero",
@@ -249,6 +254,7 @@
       "SA 2.0 lite",
       "SA 2.1",
       "sbus",
+      "settings",
       "shames",
       "shark bite",
       "smooth",
@@ -292,6 +298,51 @@
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/4.3/filters/BMI270.txt",
+      "hash": "af69e3c94ef3dcdd2fca5906292a0dbcf4e4ac1cf74a35860d379cd9e5436c4f",
+      "options": [
+        {
+          "name": "BMI270 Clean build without RPM filters",
+          "checked": false
+        },
+        {
+          "name": "BMI270 Clean build with RPM filters DSHOT300",
+          "checked": false
+        },
+        {
+          "name": "BMI270 Clean build with RPM filters DSHOT600",
+          "checked": false
+        }
+      ],
+      "title": "4.3 Filter settings for BMI270 gyroscope",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "BMI270",
+        "filter",
+        "filters",
+        "gyroscope",
+        "gyro",
+        "gyros",
+        "settings",
+        "RPM"
+      ],
+      "author": "DusKing1 (Hugo Chiang), Pitronic",
+      "description": [
+        "These settings are for BMI270 gyroscope only.",
+        "With only these settings, the BMI270 will give a nice output and control performance.",
+        "Please check the available options in this preset."
+      ],
+      "discussion": ": https://github.com/betaflight/firmware-presets/pull/141/",
+      "warning": "This preset changes PID loop rate to 3.2k. This is necessary for some BMI270 gyro boards. Please, don't change it back to anything higher than 4k unless you know what you are doing.",
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
     {
       "fullPath": "presets/4.3/filters/ctzsnooze_race.txt",
       "hash": "505a3cf9aff8fc6b861770d3bcafcb61431e2865f3fa10170f8c5cc044b5fea1",
@@ -1050,6 +1101,37 @@
         "ACTUAL rates with 720 degrees/sec max."
       ],
       "discussion": "https://github.com/betaflight/firmware-presets/pull/10",
+      "include": [
+        "presets/4.3/rates/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rates/Cat_freestyle.txt",
+      "hash": "e480e18b8bf59d30085da0f77e2e1792e3c1b21f0c0ae53875bd9de59c24ef3f",
+      "options": [
+        {
+          "name": "Actual rates analogue",
+          "checked": false
+        }
+      ],
+      "title": "Cat's Freestyle Rates",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "youtube",
+        "bardwell",
+        "freestyle"
+      ],
+      "author": "Joshua Bardwell",
+      "description": [
+        "Freestyle rates with 907 deg/sec for roll/pitch and 800 deg/sec for yaw. Relatively smooth around the sticks middle.",
+        "I am Joshua Bardwell and you gonna learn something today!",
+        "Joshua Bardwell - one of the most famous YouTubers in FPV. From thorough gear reviews, to tons of videos about drone building and tuning, his videos have helped get many pilots into the air. People love him for his ability to give simple explanations for difficult and technical issues in FPV."
+      ],
+      "discussion": "https://github.com/betaflight/firmware-presets/pull/94",
       "include": [
         "presets/4.3/rates/defaults.txt"
       ]
