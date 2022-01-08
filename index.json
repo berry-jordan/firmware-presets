@@ -2083,6 +2083,62 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/tune/cat_freestyle_5_inch.txt",
+      "hash": "f229e44d7dd61661705b0e4a3f7cebd502383571ee778b4a79f6ad10048bd109",
+      "options": [
+        {
+          "name": "Dshot600",
+          "checked": true
+        },
+        {
+          "name": "Dshot300",
+          "checked": false
+        },
+        {
+          "name": "dynamic idle",
+          "checked": false
+        }
+      ],
+      "title": "Freestyle 5\" Cat Style",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "karate",
+        "6S",
+        "5 inch",
+        "5\"",
+        "sugarK",
+        "limon",
+        "ctzsnooze",
+        "karateBrot",
+        "freestyle"
+      ],
+      "author": "sugarK",
+      "description": [
+        "This is the sugarK freestyle tune, its been test over the last few months, on 5\" quads by members of the UAVtech discord.. This is a starting point tune and has siders active so you can fine tune it easily. In saying that its still a pretty spicy tune and use at your own risk.",
+        "",
+        "THIS PRESET IS NOT SUITABLE FOR RACING QUADS AND MAY RESULT IN FLY AWAYS OR BURNT MOTORS",
+        "",
+        "Things to note.. YOU HAVE TO USE RPM FILTERING WITH THIS TUNE, failure to do so might result in fire and regarding Dshot600,  if your setup has errors in the motor tab using bidirectional Dshot then change to 8k/4k and dshot300.",
+        "Also this should be applied to a clean flash after you've setup your rates, swtiches, vtx tables etc. To test arm the quad with props on, it should sound clean with no grinding, if it passes that then hover test and check motor temps.",
+        "If any thing is off don't fly it!!",
+        "",
+        "SECOND NOTE.... Radio links.. 1. Make sure your radio system is totally up to date using either Edgetx or Opentx and your ADC in the hardware page is OFF 2. Go to the radio presets and apply the correct setup for your system and link speed."
+      ],
+      "discussion": "https://github.com/betaflight/firmware-presets/pull/95",
+      "include_warning": [
+        "misc/warnings/en/rpm_filters.txt",
+        "misc/warnings/en/freestyle.txt"
+      ],
+      "include": [
+        "presets/4.3/tune/defaults.txt",
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/tune/ctzsnooze_5in_4S_race.txt",
       "hash": "adf2a888087a2037469a02ffbaa81898513cfca47f6566bafaa127a629e80e9c",
       "options": [
